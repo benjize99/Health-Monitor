@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+   
+}
+
+h1{
+    margin-bottom: 10px;
+    margin-right: 20px;
+
+    font-size: 45px;
+    font-weight: 600;
+    position: fixed;  
+    top: 0;
+    left: 0;
+    background: #b47a43;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+
+    z-index: 1;
+}
+
+h2{
+    font-size: 45px;
+    font-weight: 300;
+    margin: 10px;
+}
+
+h2 span {
+font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.container { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 85px;
+}
+
+
+
+.container > div {
+    cursor: pointer;
+    height: 210px;
+   
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+
+   
+   
+}
+
+.container div .scale:hover {
+    opacity: 0.5;
+    scale: 0.90;  
+    transition: all  0.8s ease-in-out;
+}
+
+
+
+.container > div:nth-of-type(1){
+    grid-column: span 2;
+}
+
+.container > div:nth-of-type(6){
+    grid-column: span 2;
+}
+
+.container > div:nth-of-type(9){
+    grid-column: span 2;
+}
+
+.container > div:nth-of-type(10){
+    grid-column: span 2;
+}
+
+
+
+.bg1{
+    background-image: url('./images/img31.jpg');
+}
+
+.bg2{
+    background-image: url('./images/img30.jpg');
+    color: #333;
+}
